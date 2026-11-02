@@ -64,6 +64,9 @@ QCOM_AUDIO_USE_LEGACY_STHAL := true
 # - touch is the in-kernel Xiaomi fts_spi driver; Sony's touch-drivers/st
 #   would also bind st,spi, so the touch-drivers tree is left out
 # Xiaomi drivers ported to 6.6 (not in the sm8450-common lists)
+# tipc: netmgrd and qcrild (libnetmgr) exit when netmgr_tipc_init fails, and
+# nothing else loads it on 6.6
+# rmnet_ctl: built for waipio now; rmnet_core hard-depends on it
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     hwid.ko \
     fts_touch_spi.ko \
@@ -73,7 +76,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     leds-aw22xxx.ko \
     cs35l41_dlkm.ko \
     btpower.ko \
-    bt_fm_slim.ko
+    bt_fm_slim.ko \
+    tipc.ko \
+    rmnet_ctl.ko
 
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
@@ -100,8 +105,11 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/display-drivers/msm \
     qcom/opensource/graphics-kernel \
     qcom/opensource/wlan/platform \
-    qcom/opensource/wlan/qcacld-3.0/.qca6490 \
-    qcom/opensource/wlan/qcacld-3.0/.qca6750
+    qcom/opensource/wlan/qcacld-3.0/.qca6490
+
+# ingres has a qca6490 (0x1103); the qca6750 build exports the same symbols
+# and loads first, so qca_cld3_qca6490 fails with "duplicate symbol"
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(filter-out qca_cld3_qca6750.ko,$(BOARD_VENDOR_KERNEL_MODULES_LOAD))
 
 BOARD_BOOT_HEADER_VERSION := 4
 TARGET_NEEDS_DTBOIMAGE := true
