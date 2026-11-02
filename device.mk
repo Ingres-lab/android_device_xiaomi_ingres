@@ -27,4 +27,6 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8450/audio \
+    hardware/qcom-caf/sm8450/display \
     $(LOCAL_PATH)

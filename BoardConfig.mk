@@ -43,9 +43,38 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8450-modules
 TARGET_KERNEL_NO_GCC := true
 
+# Display: build the HAL from the 5.10 sm8450 tree. The sm8450-6.6 HAL's
+# HWResourceInfo layout does not match the HyperOS libsdmextension blob and
+# the composer aborts in SdmPropUtils with std::length_error.
+USE_DEVICE_SPECIFIC_DISPLAY := true
+DEVICE_SPECIFIC_DISPLAY_PATH := hardware/qcom-caf/sm8450/display
+QCOM_DISPLAY_SOONG_NAMESPACE := hardware/qcom-caf/sm8450/display
+
+# Audio: the 5.10 HIDL stack (primary HAL, AGMIPC@1.0 daemon, PAL/AGM) from the
+# sm8450 tree. sm8450-6.6 only has the all-AIDL HAL, whose AGM client needs an
+# in-process IAGM server the legacy audio.service never starts.
+USE_DEVICE_SPECIFIC_AUDIO := true
+DEVICE_SPECIFIC_AUDIO_PATH := hardware/qcom-caf/sm8450/audio
+QCOM_AUDIO_SOONG_NAMESPACE := hardware/qcom-caf/sm8450/audio
+QCOM_AUDIO_USE_LEGACY_STHAL := true
+
 # 6.6 module set (differs from the 5.10 common list):
 # - cvp-kernel is not present in the Sony 6.6 modules tree
-# - kgsl, touch, mm/sync/synx/securemsm are external modules in 6.6
+# - kgsl, mm/sync/synx/securemsm are external modules in 6.6
+# - touch is the in-kernel Xiaomi fts_spi driver; Sony's touch-drivers/st
+#   would also bind st,spi, so the touch-drivers tree is left out
+# Xiaomi drivers ported to 6.6 (not in the sm8450-common lists)
+BOARD_VENDOR_KERNEL_MODULES_LOAD += \
+    hwid.ko \
+    fts_touch_spi.ko \
+    mi_thermal_interface.ko \
+    xm_gamekey.ko \
+    aw8697-haptic.ko \
+    leds-aw22xxx.ko \
+    cs35l41_dlkm.ko \
+    btpower.ko \
+    bt_fm_slim.ko
+
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
     qcom/opensource/mm-drivers/sync_fence \
@@ -64,11 +93,12 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/datarmnet-ext/wlan \
     qcom/opensource/camera-kernel \
     qcom/opensource/dsp-kernel \
+    qcom/opensource/audio-kernel \
+    qcom/opensource/bt-kernel \
     qcom/opensource/eva-kernel \
     qcom/opensource/video-driver \
     qcom/opensource/display-drivers/msm \
     qcom/opensource/graphics-kernel \
-    qcom/opensource/touch-drivers \
     qcom/opensource/wlan/platform \
     qcom/opensource/wlan/qcacld-3.0/.qca6490 \
     qcom/opensource/wlan/qcacld-3.0/.qca6750
