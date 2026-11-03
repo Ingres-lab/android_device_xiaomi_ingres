@@ -68,6 +68,7 @@ QCOM_AUDIO_USE_LEGACY_STHAL := true
 # nothing else loads it on 6.6
 # rmnet_ctl: built for waipio now; rmnet_core hard-depends on it
 # mt7601u: MT7601U USB Wi-Fi dongle over OTG (monitor/injection), pulls in mac80211
+# ntsync: Wine NT sync primitives (/dev/ntsync)
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     hwid.ko \
     fts_touch_spi.ko \
@@ -80,7 +81,8 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     bt_fm_slim.ko \
     tipc.ko \
     rmnet_ctl.ko \
-    mt7601u.ko
+    mt7601u.ko \
+    ntsync.ko
 
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
