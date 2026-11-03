@@ -6,4 +6,4 @@ vendor.display.override_doze_mode=1
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|1000|200|local:4630946545580055169
+persist.vendor.fingerprint.sensor_location=1080|1000|200|local:4630946545580055170
