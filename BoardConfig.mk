@@ -62,6 +62,10 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += \
     KBUILD_BUILD_HOST=ingres-lab \
     KBUILD_BUILD_TAG="$(NEO_KERNEL_TAG)"
 
+# The firmware traps EL2 accesses to the SVE/SME registers; without these the
+# 6.6 kernel dies silently in setup_arch before any console output.
+BOARD_KERNEL_CMDLINE += arm64.nosve arm64.nosme
+
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8450-modules
 TARGET_KERNEL_NO_GCC := true
