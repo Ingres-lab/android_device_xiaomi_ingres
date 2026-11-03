@@ -34,10 +34,33 @@ TARGET_SCREEN_DENSITY := 395
 # kernel source, config and devicetree change.
 #
 
+# Kernel build profile: perf (default, ThinLTO, minimal debug/logging) or
+# debug (tracers, lockdep, KFENCE, verbose logs). Select with
+# NEO_KERNEL_PROFILE=debug in the environment.
+NEO_KERNEL_PROFILE ?= perf
+ifeq ($(filter perf debug,$(NEO_KERNEL_PROFILE)),)
+$(error NEO_KERNEL_PROFILE must be perf or debug, got '$(NEO_KERNEL_PROFILE)')
+endif
+
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_perf.config \
-    vendor/ingres_GKI.config
+    vendor/ingres_GKI.config \
+    vendor/neo_$(NEO_KERNEL_PROFILE).config
+
+ifeq ($(NEO_KERNEL_PROFILE),perf)
+KERNEL_LTO := thin
+NEO_KERNEL_TAG := NEO VORTEX SPECIAL OPTIMIZATION
+else
+KERNEL_LTO := none
+NEO_KERNEL_TAG := NEO VORTEX DEBUG BUILD
+endif
+
+# uname -v: "#1 SMP PREEMPT <date> <tag>", /proc/version: built by neo@ingres-lab
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    KBUILD_BUILD_USER=neo \
+    KBUILD_BUILD_HOST=ingres-lab \
+    KBUILD_BUILD_TAG="$(NEO_KERNEL_TAG)"
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8450-modules

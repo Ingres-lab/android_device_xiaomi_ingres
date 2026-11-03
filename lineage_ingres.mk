@@ -23,3 +23,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=ingres
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Neo
+TARGET_UNOFFICIAL_BUILD_ID := Neo
+NEO_GITHUB_ORG ?= Ingres-lab
+PRODUCT_PRODUCT_PROPERTIES += \
+    lineage.updater.uri=https://raw.githubusercontent.com/$(NEO_GITHUB_ORG)/releases/main/{device}.json
