@@ -34,3 +34,12 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sm8450/audio \
     hardware/qcom-caf/sm8450/display \
     $(LOCAL_PATH)
+
+# Lineage Health: bypass charging. night_charging makes the firmware stop
+# charging and run the phone from the adapter once the battery is at or
+# above 80%; input_suspend (the default) cuts the input instead, so the
+# battery drained while plugged in at the limit.
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/qcom-battery/night_charging)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,true)
