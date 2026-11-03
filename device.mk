@@ -20,6 +20,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/firmware/mt7601u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt7601u.bin
 
+# NeoParts
+PRODUCT_PACKAGES += \
+    NeoParts
+
 # Overlay
 PRODUCT_PACKAGES += \
     SettingsProviderResIngres \
