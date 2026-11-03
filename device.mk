@@ -16,6 +16,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/resourcemanager_waipio_mtp.xml \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
+# USB Wi-Fi dongle firmware (linux-firmware, redistributable)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/firmware/mt7601u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt7601u.bin
+
 # Overlay
 PRODUCT_PACKAGES += \
     SettingsProviderResIngres \
