@@ -1,0 +1,19 @@
+# Shoulder trigger to touch mapping daemon (see neo/triggerd).
+type neo_triggerd, domain;
+type neo_triggerd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(neo_triggerd)
+
+# Read the touchscreen and trigger keys, grab the touchscreen (EVIOCGRAB)
+allow neo_triggerd input_device:dir r_dir_perms;
+allow neo_triggerd input_device:chr_file rw_file_perms;
+
+# Virtual touchscreen through /dev/uinput
+allow neo_triggerd uhid_device:chr_file rw_file_perms;
+
+# Trigger pop-up state (xm_gamekey hall_left / hall_right)
+allow neo_triggerd sysfs:dir search;
+allow neo_triggerd sysfs_neo_gamekey:file r_file_perms;
+
+# Mapping set by NeoParts
+get_prop(neo_triggerd, system_neo_prop)

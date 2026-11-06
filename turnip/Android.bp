@@ -1,0 +1,26 @@
+//
+// SPDX-FileCopyrightText: Neo
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Mesa Turnip Vulkan driver for Adreno 7xx on KGSL (MIT, see MESA-LICENSE).
+// Installed next to the stock HAL as /vendor/lib64/hw/vulkan.turnip.so and
+// bind-mounted over vulkan.adreno.so at boot when NeoParts selects it
+// (persist.sys.neo.gpu=turnip, see init.neo.rc).
+cc_prebuilt_library_shared {
+    name: "vulkan.turnip",
+    vendor: true,
+    relative_install_path: "hw",
+    compile_multilib: "64",
+    arch: {
+        arm64: {
+            srcs: ["vulkan.turnip.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    // Built with the NDK; its SONAME (libvulkan_freedreno.so) and NDK deps
+    // do not match the platform's ELF checks.
+    check_elf_files: false,
+}

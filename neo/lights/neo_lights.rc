@@ -1,0 +1,80 @@
+#
+# SPDX-FileCopyrightText: Neo
+# SPDX-License-Identifier: Apache-2.0
+#
+# Rear "X" lights (AW22xxx RGB controller, /sys/class/leds/aw22xxx_led).
+#
+# The controller plays effect files from /vendor/firmware (index 0..18, see
+# aw22xxx_cfg_name[] in the kernel driver). cfg 1 plays the file as is, cfg 2
+# recolours it with rgb[0..8] and retimes it with frq (ms). The chip takes the
+# colour bytes as blue, red, green, so NeoParts stores rgb already as BBRRGG.
+#
+# NeoParts properties (persist.sys.neo.led.*):
+#   effect    0..18 (0 = off)       cfg   1 = stock colours, 2 = custom colour
+#   rgb       BBRRGG                frq   effect speed in ms
+#   imax      0..7 current step (driver caps at 7 = 20 mA)
+#   bootglow  1 = breathe blue while booting (default)
+#   apply     bumped by NeoParts after it wrote the values above
+
+# The lights HAL (user system) drives the controller too.
+on boot
+    chown system system /sys/class/leds/aw22xxx_led/imax
+    chown system system /sys/class/leds/aw22xxx_led/rgb
+    chown system system /sys/class/leds/aw22xxx_led/frq
+    chown system system /sys/class/leds/aw22xxx_led/effect
+    chown system system /sys/class/leds/aw22xxx_led/cfg
+    chmod 0664 /sys/class/leds/aw22xxx_led/imax
+    chmod 0664 /sys/class/leds/aw22xxx_led/rgb
+    chmod 0664 /sys/class/leds/aw22xxx_led/frq
+    chmod 0664 /sys/class/leds/aw22xxx_led/effect
+    chmod 0664 /sys/class/leds/aw22xxx_led/cfg
+
+# Breathe in Neo blue while Android boots (matches the boot animation).
+on boot
+    setprop vendor.neo.led.boot ${persist.sys.neo.led.bootglow:-1}
+
+# Replayed when the boot animation starts, in case the controller firmware was
+# still loading at "on boot" (the driver ignores cfg until it is ready).
+on property:vendor.neo.led.boot=1
+    trigger neo-led-boot
+
+on property:init.svc.bootanim=running && property:vendor.neo.led.boot=1
+    trigger neo-led-boot
+
+on neo-led-boot
+    write /sys/class/leds/aw22xxx_led/imax 3
+    write /sys/class/leds/aw22xxx_led/rgb "0 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "1 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "2 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "3 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "4 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "5 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "6 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "7 ff00b4"
+    write /sys/class/leds/aw22xxx_led/rgb "8 ff00b4"
+    write /sys/class/leds/aw22xxx_led/frq 1500
+    write /sys/class/leds/aw22xxx_led/effect 2
+    write /sys/class/leds/aw22xxx_led/cfg 2
+
+# After boot, and whenever NeoParts applies new settings: the user's choice.
+on property:sys.boot_completed=1
+    setprop vendor.neo.led.boot 0
+    trigger neo-led-apply
+
+# Later settings changes are applied by the lights HAL (it must not be overwritten while an event
+# such as a call is showing).
+
+on neo-led-apply
+    write /sys/class/leds/aw22xxx_led/imax ${persist.sys.neo.led.imax:-3}
+    write /sys/class/leds/aw22xxx_led/rgb "0 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "1 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "2 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "3 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "4 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "5 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "6 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "7 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/rgb "8 ${persist.sys.neo.led.rgb:-ff00b4}"
+    write /sys/class/leds/aw22xxx_led/frq ${persist.sys.neo.led.frq:-1500}
+    write /sys/class/leds/aw22xxx_led/effect ${persist.sys.neo.led.effect:-0}
+    write /sys/class/leds/aw22xxx_led/cfg ${persist.sys.neo.led.cfg:-1}

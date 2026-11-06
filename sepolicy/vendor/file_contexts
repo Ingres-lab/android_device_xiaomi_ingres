@@ -1,0 +1,2 @@
+/(vendor|system/vendor)/bin/neo_triggerd    u:object_r:neo_triggerd_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.neo    u:object_r:hal_neo_lights_exec:s0

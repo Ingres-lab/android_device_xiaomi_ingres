@@ -1,0 +1,20 @@
+# Lights HAL for the rear lights (see neo/lights/hal).
+type hal_neo_lights, domain;
+type hal_neo_lights_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_neo_lights)
+hal_server_domain(hal_neo_lights, hal_light)
+
+# The AW22xxx controller (/sys/class/leds/aw22xxx_led)
+r_dir_file(hal_neo_lights, sysfs_leds)
+allow hal_neo_lights sysfs_neo_led:dir search;
+allow hal_neo_lights sysfs_neo_led:file rw_file_perms;
+
+# Charging or low battery
+r_dir_file(hal_neo_lights, sysfs_batteryinfo)
+
+# Per-event settings from NeoParts and the call state it publishes
+get_prop(hal_neo_lights, system_neo_prop)
+
+# neo_lights.rc sets the owner and mode, and plays the boot effect
+allow init sysfs_neo_led:file { setattr rw_file_perms };

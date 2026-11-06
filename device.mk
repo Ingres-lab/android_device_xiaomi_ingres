@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/ingres/ingres-vendor.mk)
 
+# Xiaomi Camera (MiuiCamera, replaces Aperture)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-ingres/device.mk)
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/mixer_paths_waipio_mtp.xml \
@@ -23,6 +26,16 @@ PRODUCT_COPY_FILES += \
 # NeoParts
 PRODUCT_PACKAGES += \
     NeoParts
+
+# Neo: shoulder trigger mapping, rear lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.neo \
+    neo_triggerd \
+    neo_lights.rc
+
+# Mesa Turnip Vulkan driver, selectable in NeoParts (applied on reboot)
+PRODUCT_PACKAGES += \
+    vulkan.turnip
 
 # Overlay
 PRODUCT_PACKAGES += \

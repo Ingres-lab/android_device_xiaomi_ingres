@@ -1,0 +1,20 @@
+//
+// SPDX-FileCopyrightText: Neo
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Shoulder trigger to touch mapping (NeoParts -> Triggers).
+cc_binary {
+    name: "neo_triggerd",
+    vendor: true,
+    srcs: ["neo_triggerd.cpp"],
+    init_rc: ["neo_triggerd.rc"],
+    shared_libs: [
+        "libbase",
+        "liblog",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}

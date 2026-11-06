@@ -13,6 +13,19 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 # Inherit from the proprietary version
 include vendor/xiaomi/ingres/BoardConfigVendor.mk
 
+# Neo OS boot animation (neo/bootanimation/gen_bootanimation.py). Lineage's
+# genrule copies it with a path relative to the source root; if out/ is a
+# symlink outside the tree, the out dir's parent needs a device/ link to it.
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION := device/xiaomi/ingres/neo/bootanimation/bootanimation.zip
+
+# Neo (triggers, rear lights)
+BOARD_VENDOR_SEPOLICY_DIRS += device/xiaomi/ingres/sepolicy/vendor
+
+# Xiaomi Camera (MiuiCamera)
+-include device/xiaomi/miuicamera-ingres/BoardConfig.mk
+
 DEVICE_PATH := device/xiaomi/ingres
 
 # Audio
@@ -96,6 +109,7 @@ QCOM_AUDIO_USE_LEGACY_STHAL := true
 # rmnet_ctl: built for waipio now; rmnet_core hard-depends on it
 # mt7601u: MT7601U USB Wi-Fi dongle over OTG (monitor/injection), pulls in mac80211
 # ntsync: Wine NT sync primitives (/dev/ntsync)
+# ch341/cp210x: USB serial adapters; btusb: USB Bluetooth adapters (OTG)
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     hwid.ko \
     fts_touch_spi.ko \
@@ -109,7 +123,10 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     tipc.ko \
     rmnet_ctl.ko \
     mt7601u.ko \
-    ntsync.ko
+    ntsync.ko \
+    ch341.ko \
+    cp210x.ko \
+    btusb.ko
 
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \

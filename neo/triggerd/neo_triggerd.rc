@@ -1,0 +1,19 @@
+#
+# SPDX-FileCopyrightText: Neo
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Shoulder trigger mapping (NeoParts). The daemon only grabs the touchscreen
+# while a trigger is popped up; it is restarted by init if it ever dies, and the
+# kernel releases the grab at that point, so touch never stays blocked.
+service vendor.neo-triggerd /vendor/bin/neo_triggerd
+    class late_start
+    user system
+    group system input uhid
+    disabled
+
+on property:sys.boot_completed=1 && property:persist.sys.neo.trigger.enable=1
+    start vendor.neo-triggerd
+
+on property:persist.sys.neo.trigger.enable=0
+    stop vendor.neo-triggerd

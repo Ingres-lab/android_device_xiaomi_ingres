@@ -1,0 +1,3 @@
+genfscon sysfs /devices/platform/soc/soc:gamekey/hall_left    u:object_r:sysfs_neo_gamekey:s0
+genfscon sysfs /devices/platform/soc/soc:gamekey/hall_right   u:object_r:sysfs_neo_gamekey:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_2_geni_se/890000.i2c/i2c-4/4-006a/leds/aw22xxx_led u:object_r:sysfs_neo_led:s0

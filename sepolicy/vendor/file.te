@@ -1,0 +1,2 @@
+type sysfs_neo_gamekey, sysfs_type, fs_type;
+type sysfs_neo_led, sysfs_type, fs_type;

@@ -1,0 +1,33 @@
+//
+// SPDX-FileCopyrightText: Neo
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Rear lights: boot glow and NeoParts settings (see neo_lights.rc).
+prebuilt_etc {
+    name: "neo_lights.rc",
+    src: "neo_lights.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+// Lights HAL: maps Android's battery, notification and attention lights (and the favourite-call
+// effect) onto the rear lights, using the per-event settings from NeoParts.
+cc_binary {
+    name: "android.hardware.lights-service.neo",
+    relative_install_path: "hw",
+    vendor: true,
+    srcs: ["hal/neo_lights_hal.cpp"],
+    init_rc: ["hal/lights-neo.rc"],
+    vintf_fragments: ["hal/lights-neo.xml"],
+    shared_libs: [
+        "android.hardware.light-V3-ndk",
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}

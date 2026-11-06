@@ -26,6 +26,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Neo
 TARGET_UNOFFICIAL_BUILD_ID := Neo
+# Neo OS version: properties/system.prop (ro.build.display.id, ro.neo.os.*)
 NEO_GITHUB_ORG ?= Ingres-lab
 PRODUCT_PRODUCT_PROPERTIES += \
     lineage.updater.uri=https://raw.githubusercontent.com/$(NEO_GITHUB_ORG)/releases/main/{device}.json

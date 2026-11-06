@@ -1,2 +1,9 @@
 # Xiaomi
 ro.product.mod_device=ingres_global
+
+# Neo OS. ro.build.display.id (About phone -> Build number) is written as an
+# optional (?=) prop by the build, so this plain value replaces it.
+ro.build.display.id=Neo OS 0.1 Beta
+ro.neo.os.name=Neo OS
+ro.neo.os.version=0.1
+ro.neo.os.channel=Beta
