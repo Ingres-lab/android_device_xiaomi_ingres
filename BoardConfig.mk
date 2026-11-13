@@ -109,8 +109,16 @@ QCOM_AUDIO_USE_LEGACY_STHAL := true
 # rmnet_ctl: built for waipio now; rmnet_core hard-depends on it
 # mt7601u: MT7601U USB Wi-Fi dongle over OTG (monitor/injection), pulls in mac80211
 # ntsync: Wine NT sync primitives (/dev/ntsync)
+# cdsp-loader: creates /sys/kernel/boot_cdsp/boot, which vendor init.qti.kernel.rc writes on early-boot to
+#   start the compute DSP. Without it the CDSP stays offline and every CDSP offload (camera AI nodes,
+#   SNPE/QNN HTP, BITML) gets ECONNREFUSED; MiuiCamera's HAL then crashes.
 # ch341/cp210x: USB serial adapters; btusb: USB Bluetooth adapters (OTG)
+# rtw88_*u / mt76x2u / 88XXau: more USB Wi-Fi dongles for monitor/injection (RTL8822BU, RTL8821CU,
+#   RTL8822CU, RTL8723DU, MT7612U, RTL8812AU/8821AU/8814AU from the aircrack-ng driver)
+# nxp-nci: NXP SN1xx NFC (DT qcom,sn-nci @ i2c-1 0x28). Creates /dev/nq-nci, which the
+#   android.hardware.nfc-service.nxp HAL opens; without it NFC never initializes.
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
+    nxp-nci.ko \
     hwid.ko \
     fts_touch_spi.ko \
     mi_thermal_interface.ko \
@@ -126,14 +134,23 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     ntsync.ko \
     ch341.ko \
     cp210x.ko \
-    btusb.ko
+    btusb.ko \
+    cdsp-loader.ko \
+    rtw88_8822bu.ko \
+    rtw88_8821cu.ko \
+    rtw88_8822cu.ko \
+    rtw88_8723du.ko \
+    mt76x2u.ko \
+    88XXau.ko
 
 TARGET_KERNEL_EXT_MODULES := \
+    rtl8812au:kbuild \
     qcom/opensource/mmrm-driver \
     qcom/opensource/mm-drivers/sync_fence \
     qcom/opensource/mm-drivers/msm_ext_display \
     qcom/opensource/synx-kernel \
     qcom/opensource/securemsm-kernel \
+    nxp/opensource/driver \
     qcom/opensource/datarmnet-ext/mem \
     qcom/opensource/dataipa/drivers/platform/msm \
     qcom/opensource/datarmnet/core \
