@@ -10,6 +10,11 @@ $(call inherit-product, device/xiaomi/ingres/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Built-in Google apps (MindTheGapps), when the local vendor/gapps tree is present. Built in,
+# the default runtime grants for GMS and the sync adapters are applied on first boot, which a
+# GApps zip flashed after the first boot never gets (contacts/calendar sync then stays off).
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
 PRODUCT_NAME := lineage_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
