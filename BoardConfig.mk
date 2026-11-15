@@ -75,6 +75,26 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += \
     KBUILD_BUILD_HOST=ingres-lab \
     KBUILD_BUILD_TAG="$(NEO_KERNEL_TAG)"
 
+# Tune scheduling for the Cortex-A710 (SM8450 mid cores; the X2 prime core has a near-identical
+# pipeline). Measured on the device (bench/results/table-tuning.txt): no effect outside the 1-2%
+# noise floor, and the image grows ~2%. Kept on request; remove this line to go back to generic.
+# KCFLAGS applies to the built-in kernel; under ThinLTO -mtune becomes a per-function IR attribute.
+TARGET_KERNEL_ADDITIONAL_FLAGS += KCFLAGS=-mtune=cortex-a710
+
+# Profile-guided (AutoFDO) kernel. neo/autofdo/kernel.afdo was recorded on the device itself (CoreSight ETE trace of the
+# running kernel under a mixed app/network/storage/process workload, converted with llvm-profgen). It only affects the
+# built-in kernel (loadable modules and the EL2 hypervisor/vDSO/EFI-stub code are excluded in the kernel tree).
+# Measured (bench/, vs the same kernel without it, noise floor +-2%): +13% / +6% / +7% geometric mean on the kernel
+# micro-benchmarks for the A510 / A710 / X2 cores, -23% instruction-cache misses on process exec, -14% on wakeups.
+# AFDO_HOT_CUTOFF=900000 treats the hottest 90% of samples as hot; the compiler default (99%) bloated .text by 50%.
+# Set NEO_KERNEL_AUTOFDO=false in the environment to build without the profile.
+NEO_KERNEL_AUTOFDO ?= true
+ifeq ($(NEO_KERNEL_AUTOFDO),true)
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    CLANG_AUTOFDO_PROFILE=$(abspath device/xiaomi/ingres/neo/autofdo/kernel.afdo) \
+    AFDO_HOT_CUTOFF=900000
+endif
+
 # The firmware traps EL2 accesses to the SVE/SME registers; without these the
 # 6.6 kernel dies silently in setup_arch before any console output.
 BOARD_KERNEL_CMDLINE += arm64.nosve arm64.nosme
@@ -142,6 +162,16 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     rtw88_8723du.ko \
     mt76x2u.ko \
     88XXau.ko
+
+# Recovery (OrangeFox/TWRP/Lineage) needs touch: in normal boot fts_touch_spi.ko loads late from
+# vendor_dlkm, but recovery only sees the vendor ramdisk, so ship it (and its hwid dependency)
+# there and load it in recovery mode only. Firmware st_fts_l10*.ftb comes from /vendor/firmware.
+BOOT_KERNEL_MODULES += \
+    hwid.ko \
+    fts_touch_spi.ko
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += \
+    hwid.ko \
+    fts_touch_spi.ko
 
 TARGET_KERNEL_EXT_MODULES := \
     rtl8812au:kbuild \
