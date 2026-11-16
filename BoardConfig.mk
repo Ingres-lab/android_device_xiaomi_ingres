@@ -93,12 +93,17 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += KCFLAGS=-mtune=cortex-a710
 # Measured (bench/, vs the same kernel without it, noise floor +-2%): +13% / +6% / +7% geometric mean on the kernel
 # micro-benchmarks for the A510 / A710 / X2 cores, -23% instruction-cache misses on process exec, -14% on wakeups.
 # AFDO_HOT_CUTOFF=900000 treats the hottest 90% of samples as hot; the compiler default (99%) bloated .text by 50%.
+# The profile also covers the GPU (msm_kgsl), display (msm_drm) and ntsync modules, profiled with
+# bench/modprof_session.sh + bench/make_module_profile.sh; AUTOFDO_MODULES=1 lets module objects use it
+# (the kernel's Makefile.lib skips modules otherwise). Functions are matched by name; names shared with the
+# kernel (readl, _copy_from_user, ...) keep the kernel's profile.
 # Set NEO_KERNEL_AUTOFDO=false in the environment to build without the profile.
 NEO_KERNEL_AUTOFDO ?= true
 ifeq ($(NEO_KERNEL_AUTOFDO),true)
 TARGET_KERNEL_ADDITIONAL_FLAGS += \
     CLANG_AUTOFDO_PROFILE=$(abspath device/xiaomi/ingres/neo/autofdo/kernel.afdo) \
-    AFDO_HOT_CUTOFF=900000
+    AFDO_HOT_CUTOFF=900000 \
+    AUTOFDO_MODULES=1
 endif
 
 # The firmware traps EL2 accesses to the SVE/SME registers; without these the
