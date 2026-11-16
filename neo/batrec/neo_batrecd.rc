@@ -1,0 +1,11 @@
+#
+# SPDX-FileCopyrightText: Neo
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Battery / charger / suspend black-box recorder: writes into the system log, which logcatd
+# keeps on disk across restarts (see lineage_ingres.mk). Mode: persist.sys.neo.batrec.mode.
+service vendor.neo-batrecd /vendor/bin/neo_batrecd
+    class late_start
+    user system
+    group system

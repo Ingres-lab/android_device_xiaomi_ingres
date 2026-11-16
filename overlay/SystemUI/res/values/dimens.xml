@@ -13,4 +13,20 @@
     <!-- Microns/ums (1000 um = 1mm) per pixel for the given device. If unspecified, UI that
          relies on this value will not be sized correctly. -->
     <item format="float" name="pixel_pitch" type="dimen">48.71</item>
+
+    <!-- Neo: front camera hole (centre x, centre y, radius in px; cutout bounds 512..568 x 0..94).
+         With a sensor location the face scanning ring is drawn around the hole while the lock
+         screen is scanning for a face. -->
+    <integer-array name="config_face_auth_props">
+        <item>540</item>
+        <item>47</item>
+        <item>28</item>
+    </integer-array>
+
+    <!-- Neo: front camera used for face unlock, plus the camera protection / face scanning ring.
+         Unlike the cutout spec, the protection path uses absolute screen coordinates: a circle of
+         radius 33 centred on the hole at x=540, y=47. -->
+    <string name="config_protectedCameraId" translatable="false">1</string>
+    <bool name="config_enableDisplayCutoutProtection">true</bool>
+    <string name="config_frontBuiltInDisplayCutoutProtection" translatable="false">M 507,52 a 33,33 0 1,0 66,0 a 33,33 0 1,0 -66,0 Z</string>
 </resources>

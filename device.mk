@@ -46,6 +46,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.neo \
     neo_triggerd \
+    neo_batrecd \
+    neo-collect-logs \
     neo_lights.rc
 
 # Mesa Turnip Vulkan driver, selectable in NeoParts (applied on reboot)
@@ -67,3 +69,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sm8450/display \
     $(LOCAL_PATH)
 
+# Neo: Google Sans Flex as the system "sans-serif" family (frameworks/base/data/fonts/fonts.xml
+# references it by file name, so it has to be in /system/fonts). The Lineage font overlay and
+# fonts_customization.xml keep using the /product/fonts copy for the named google-sans families.
+PRODUCT_COPY_FILES += \
+    external/google-fonts/google-sans-flex/GoogleSansFlex-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/GoogleSansFlex-Regular.ttf

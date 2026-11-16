@@ -1,0 +1,32 @@
+cc_binary {
+    name: "neo_haptic_play",
+    srcs: ["neo_haptic_play.c"],
+    vendor: true,
+    cflags: ["-Wall", "-Werror"],
+}
+
+// Vibrator HAL for the AW86927 motor: Apple-style effects and the Android composition primitives,
+// synthesised by synth.py (hal/neo_waves.h) and streamed through the driver's real-time mode.
+cc_binary {
+    name: "vendor.neo.hardware.vibrator.service",
+    relative_install_path: "hw",
+    vendor: true,
+    srcs: [
+        "hal/HapticDevice.cpp",
+        "hal/NeoVibrator.cpp",
+        "hal/service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "android.hardware.vibrator-V2-ndk",
+    ],
+    init_rc: ["hal/vendor.neo.hardware.vibrator.service.rc"],
+    vintf_fragments: ["hal/vendor.neo.hardware.vibrator.service.xml"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+    ],
+}

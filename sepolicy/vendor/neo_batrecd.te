@@ -1,0 +1,25 @@
+# Battery / charger / suspend recorder (see neo/batrec). Writes into the system log only.
+type neo_batrecd, domain;
+type neo_batrecd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(neo_batrecd)
+
+# Battery supply, Xiaomi gauge nodes (/sys/class/qcom-battery) and the USB supply
+r_dir_file(neo_batrecd, vendor_sysfs_battery_supply)
+r_dir_file(neo_batrecd, vendor_sysfs_usb_supply)
+
+# Suspend counters, wake-up sources, cpu idle/frequency, thermal zones
+r_dir_file(neo_batrecd, sysfs_suspend_stats)
+r_dir_file(neo_batrecd, sysfs_wakeup)
+r_dir_file(neo_batrecd, sysfs_devices_system_cpu)
+r_dir_file(neo_batrecd, sysfs_thermal)
+allow neo_batrecd sysfs:dir r_dir_perms;
+allow neo_batrecd sysfs:file r_file_perms;
+
+# Uptime, load average, memory counters
+allow neo_batrecd proc_uptime:file r_file_perms;
+allow neo_batrecd proc_loadavg:file r_file_perms;
+allow neo_batrecd proc_meminfo:file r_file_perms;
+
+# Mode set by NeoParts (persist.sys.neo.batrec.mode)
+get_prop(neo_batrecd, system_neo_prop)

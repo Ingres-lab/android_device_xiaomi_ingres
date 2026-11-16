@@ -1,0 +1,27 @@
+//
+// SPDX-FileCopyrightText: Neo
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Battery / charger / suspend recorder (NeoParts > Logs).
+cc_binary {
+    name: "neo_batrecd",
+    vendor: true,
+    srcs: ["neo_batrecd.cpp"],
+    init_rc: ["neo_batrecd.rc"],
+    shared_libs: [
+        "libbase",
+        "liblog",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
+
+// adb root && adb shell neo-collect-logs   (same data as NeoParts > Logs > Share logs)
+sh_binary {
+    name: "neo-collect-logs",
+    src: "neo-collect-logs.sh",
+    system_ext_specific: true,
+}

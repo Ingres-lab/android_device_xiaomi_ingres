@@ -394,5 +394,36 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -28 V 94 H 28 V 0 H 0 Z</string>
+    <!-- Neo: circle around the front camera hole (centre x relative to the top centre, 47 px down,
+         radius 25) instead of the stock 56x94 rectangle, so the face scanning ring and the cutout
+         fill match the hole. -->
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -25,52 a 25,25 0 1,0 50,0 a 25,25 0 1,0 -50,0 Z</string>
+
+    <!-- Neo: the Pixel Launcher is the home app and the recents provider (Quickstep). Its recents
+         activity receives the "recents" permissions (task control, screenshots, gestures). -->
+    <string name="config_recentsComponentName" translatable="false"
+        >com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+
+    <!-- Neo: Device Personalization Services (Android System Intelligence) -->
+    <string name="config_systemUiIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- Neo: SystemUI only creates the face scanning decor for a filled built-in cutout; the fill is a
+         black circle exactly over the camera hole. -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <!-- Neo: Circle to Search / contextual search is handled by the Google app (Velvet). The Pixel
+         Launcher starts it from the navigation pill long-press. -->
+    <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
+
+    <!-- Neo: system services the Pixel Launcher talks to. Without a provider the framework does not
+         start them and the launcher crashes (SearchUiManager is null). All are served by Device
+         Personalization Services (com.google.android.as). -->
+    <string name="config_defaultSearchUiService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService</string>
+    <string name="config_defaultAppPredictionService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
+    <string name="config_defaultSmartspaceService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
+    <string name="config_defaultContentSuggestionsService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 </resources>

@@ -17,3 +17,6 @@ allow neo_triggerd sysfs_neo_gamekey:file r_file_perms;
 
 # Mapping set by NeoParts
 get_prop(neo_triggerd, system_neo_prop)
+
+# Publish which triggers are unlocked (sys.neo.trigger.pop), read by NeoParts
+set_prop(neo_triggerd, system_neo_trigger_prop)

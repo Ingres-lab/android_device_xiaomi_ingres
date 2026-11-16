@@ -1,0 +1,10 @@
+service vendor.neo.vibrator /vendor/bin/hw/vendor.neo.hardware.vibrator.service
+    class hal
+    user system
+    group system input wakelock
+    capabilities BLOCK_SUSPEND
+
+# The motor driver's real-time waveform stream is a root-only sysfs file by default
+on boot
+    chown system system /sys/devices/platform/soc/8c0000.qcom,qupv3_2_geni_se/884000.i2c/i2c-3/3-005a/custom_wave
+    chmod 0660 /sys/devices/platform/soc/8c0000.qcom,qupv3_2_geni_se/884000.i2c/i2c-3/3-005a/custom_wave

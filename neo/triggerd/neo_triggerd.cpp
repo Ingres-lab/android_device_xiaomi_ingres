@@ -22,6 +22,9 @@
  *   persist.sys.neo.trigger.enable  1 | 0
  *   persist.sys.neo.trigger.left    "x,y" in 1/10000 of the panel, natural
  *   persist.sys.neo.trigger.right   orientation (empty = trigger unmapped)
+ *
+ * State published for NeoParts:
+ *   sys.neo.trigger.pop          bit 0 = left unlocked, bit 1 = right unlocked
  */
 
 #define LOG_TAG "neo_triggerd"
@@ -324,6 +327,16 @@ void handle_touch_event(const input_event& ev) {
     g.in_frame = true;
 }
 
+// Tells NeoParts which triggers are unlocked (popped up): bit 0 = left, bit 1 = right.
+// It uses this to open the touch point editor when a trigger is unlocked.
+void publish_popped() {
+    static int last = -1;
+    const int mask = (g.trig[kLeft].popped ? 1 : 0) | (g.trig[kRight].popped ? 2 : 0);
+    if (mask == last) return;
+    last = mask;
+    android::base::SetProperty("sys.neo.trigger.pop", std::to_string(mask));
+}
+
 void handle_key_event(const input_event& ev) {
     if (ev.type != EV_KEY) return;
     int side = -1;
@@ -336,6 +349,7 @@ void handle_key_event(const input_event& ev) {
         case KEY_F6: if (ev.value) g.trig[kRight].popped = false; break;
         default: return;
     }
+    publish_popped();
     if (side >= 0) {
         Trigger& t = g.trig[side];
         // Popping the left trigger produces a short stray F1 press before F3;
@@ -378,6 +392,7 @@ bool init_devices() {
 
     g.trig[kLeft].popped = read_hall("hall_left");
     g.trig[kRight].popped = read_hall("hall_right");
+    publish_popped();
     ALOGI("x %d..%d y %d..%d slots %d, popped L=%d R=%d", g.ax.minimum, g.ax.maximum,
           g.ay.minimum, g.ay.maximum, g.aslot.maximum, g.trig[kLeft].popped, g.trig[kRight].popped);
     return true;

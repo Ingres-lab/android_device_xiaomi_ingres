@@ -17,3 +17,4 @@ on property:sys.boot_completed=1 && property:persist.sys.neo.trigger.enable=1
 
 on property:persist.sys.neo.trigger.enable=0
     stop vendor.neo-triggerd
+    setprop sys.neo.trigger.pop 0
