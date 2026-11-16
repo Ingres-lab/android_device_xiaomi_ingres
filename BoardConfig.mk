@@ -47,7 +47,7 @@ TARGET_SCREEN_DENSITY := 395
 # kernel source, config and devicetree change.
 #
 
-# Kernel build profile: perf (default, ThinLTO, minimal debug/logging) or
+# Kernel build profile: perf (default, full LTO, minimal debug/logging) or
 # debug (tracers, lockdep, KFENCE, verbose logs). Select with
 # NEO_KERNEL_PROFILE=debug in the environment.
 NEO_KERNEL_PROFILE ?= perf
@@ -62,7 +62,9 @@ TARGET_KERNEL_CONFIG := \
     vendor/neo_$(NEO_KERNEL_PROFILE).config
 
 ifeq ($(NEO_KERNEL_PROFILE),perf)
-KERNEL_LTO := thin
+# Full LTO (whole-kernel monolithic optimisation) instead of ThinLTO: slower, far more
+# RAM to link, but the compiler sees the whole image at once for better inlining.
+KERNEL_LTO := full
 NEO_KERNEL_TAG := NEO VORTEX SPECIAL OPTIMIZATION
 else
 KERNEL_LTO := none
@@ -81,7 +83,10 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += \
 # KCFLAGS applies to the built-in kernel; under ThinLTO -mtune becomes a per-function IR attribute.
 TARGET_KERNEL_ADDITIONAL_FLAGS += KCFLAGS=-mtune=cortex-a710
 
-# Profile-guided (AutoFDO) kernel. neo/autofdo/kernel.afdo was recorded on the device itself (CoreSight ETE trace of the
+# Profile-guided (AutoFDO) kernel. The current neo/autofdo/kernel.afdo (v2, 2026-11-16) was re-recorded on a full-LTO
+# profiling kernel built without a profile, with simpleperf's own functions (kallsyms, perf_output_*) filtered out
+# (bench/: kbuild_variant.sh, prof_session.sh, make_profile.sh). The measurements below are from the v1 ThinLTO profile.
+# neo/autofdo/kernel.afdo was recorded on the device itself (CoreSight ETE trace of the
 # running kernel under a mixed app/network/storage/process workload, converted with llvm-profgen). It only affects the
 # built-in kernel (loadable modules and the EL2 hypervisor/vDSO/EFI-stub code are excluded in the kernel tree).
 # Measured (bench/, vs the same kernel without it, noise floor +-2%): +13% / +6% / +7% geometric mean on the kernel
