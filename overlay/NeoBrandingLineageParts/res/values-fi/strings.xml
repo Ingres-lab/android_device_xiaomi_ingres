@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS Asetukset</string>
+    <string name="anonymous_statistics_title">Neo OS-tilastot</string>
+    <string name="anonymous_statistics_summary">Auta tekemään Neo OSista parempi tarjoamalla anonyymejä tilastoraportteja</string>
+    <string name="anonymous_statistics_warning">Neo OS-tilastojen käyttöönotto mahdollistaa anonyymien tietojen lähettämisen Neo OSin kehittäjille, jotta laitteiden järjestelmäasennuksia voidaan seurata. Tiedot sisältävät yksilöllisen tunnisteen, joka ei vaaranna henkilökohtaisia tietojasi. Tietoja lähetetään jokaisella uudelleenkäynnistyskerralla.\n\nValitse Esikatsele tietoja nähdäksesi, millaisia tietoja laitteestasi lähetetään.</string>
+    <string name="trust_feature_security_patches_explain">Google julkaisee tietoturvapäivityksiä kuukausittain yhteistyössä alustan valmistajien kanssa korjatakseen ongelmia joita haitalliset sovellukset voisivat käyttää ohittaakseen turvallisuusmäärityksiä ja aiheuttaakseen vahinkoa laitteellesi. Googlen julkaisemat päivitykset lisätään joka kuukausi kaikkiin tuettuihin laitteisiin, mutta suljettuun koodiin tehdyt muutokset voi julkaista vain laitteen valmistaja. Pitääksesi laitteesi turvassa, varmista että käytössä on aina tuore Neo OS-koontiversio, ja (jos mahdollista) laitevalmistajan versio on viimeisin Neo OS:n suosittelema.</string>
+</resources>

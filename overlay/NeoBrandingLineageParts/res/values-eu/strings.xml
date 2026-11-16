@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS ezarpenak</string>
+    <string name="anonymous_statistics_title">Neo OS estatistikak</string>
+    <string name="anonymous_statistics_summary">Neo OS hobetzen lagundu estatistika anonimoak bidaliz</string>
+    <string name="anonymous_statistics_warning">Neo OS-en estatistiken bilketa eta bidaltzea baimenduz, informazio ez pertsonala Neo OS garatzaileei bidaltzea baimentzen duzu, gailuetan burutzen diren instalazioen jarraipenerako. Bidalitako informazioak identifikadore esklusibo eta anonimo bat darama.
+Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioaren adibide bat ikusteko, sakatu Aurreikusi datuak.</string>
+    <string name="trust_feature_security_patches_explain">Segurtasun partxeak hilabetero kaleratzen ditu Googlek ekoizleekin elkarlanean, aplikazio gaizkileek segurtasun mugak inguratzeko eta gailuan kalte iraunkorra sortzeko erabili ditzaketen ahuleziak konpontzeko. Googlek argitaratutako partxeak onartutako gailu guztietan aplikatzen dira hilabetero, baina jabeduna den kodean ekoizleak besterik ezin du aplikatu partxea. Gailua seguru mantentzeko egiaztatu Neo OS beti egunean dagoela eta (baldin eta badagokio) egiaztatu zure ekoizlearen irudia Neo OS-ek aholkatutako azkenera eguneratu dela.</string>
+</resources>

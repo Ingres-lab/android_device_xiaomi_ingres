@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS - Beállítások</string>
+    <string name="anonymous_statistics_title">Neo OS statisztika</string>
+    <string name="anonymous_statistics_summary">Segítsen a Neo OS jobbá tételében, kapcsolja be a névtelen statisztikai adatok gyűjtését</string>
+    <string name="anonymous_statistics_warning">A Neo OS statisztika engedélyezése nem terjed ki személyes adatokra, csak egy egyedi azonosítóval azonosítjuk az eszközöket. A beküldött adatok beleértve az egyedi azonosítót, nem veszélyeztetik az adatvédelmi vagy személyes adatokat. A statisztika minden rendszerindításkor elküldésre kerül.\n\nAz elküldött adatok menüpont alatt tekintheti meg a statisztikai adatokat.</string>
+    <string name="trust_feature_security_patches_explain">Az Androidos biztonsági hibajavító csomagok havonta jelennek meg a Google és a SoC gyártók jóvoltából, a rendszerben fellépő olyan hibák kezelésére, amelyeket a rosszindulatú alkalmazások kihasználhatnak a biztonsági korlátozások megkerülésére, és ideiglenesen vagy tartósan károsíthatják a készüléket.\nMíg a platformjavítások havonta frissülnek globálisan, a gyártói javításokat csak időnként frissítik az OEM-eken keresztül.\nA készülékbiztonság megőrzéséhez győződjön meg róla, hogy az Ön Neo OS kiadása mindig naprakész-e, és (ha elérhető) biztosítja, hogy a gyártói képet a Neo OS által ajánlott legfrissebbre frissítse.</string>
+</resources>

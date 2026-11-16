@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Paramètres de Neo OS</string>
+    <string name="anonymous_statistics_title">Statistiques Neo OS</string>
+    <string name="anonymous_statistics_summary">Contribuer à l\'amélioration de Neo OS en envoyant des rapports de statistiques anonymes</string>
+    <string name="anonymous_statistics_warning">Autoriser l\'envoi de statistiques Neo OS permet aux développeurs de Neo OS de collecter des données anonymes afin de comptabiliser le nombre d\'installations par type d\'appareil. Les informations transmises contiennent un identifiant unique et ne compromettent en aucune manière votre vie privée ou vos données personnelles. Les informations sont envoyées à chaque démarrage du système.\n\nPour visualiser un exemple de ces données, sélectionnez « Aperçu des données ».</string>
+    <string name="trust_feature_security_patches_explain">Les correctifs de sécurité sont publiés chaque mois par Google, en coopération avec les fournisseurs de SoC. Ils permettent de corriger des failles que des applications malveillantes sont susceptibles d\'exploiter pour contourner les restrictions de sécurité et endommager votre appareil de façon définitive. Les correctifs fournis par Google sont appliqués chaque mois à tous les appareils compatibles, mais ceux concernant le code propriétaire ne peuvent l\'être que par le fabricant de votre appareil. Pour garantir la sécurité de votre appareil, veillez à toujours utiliser la dernière version de Neo OS et, le cas échéant, mettez à jour votre fichier vendor.img afin qu\'il corresponde à la dernière version recommandée par Neo OS.</string>
+</resources>

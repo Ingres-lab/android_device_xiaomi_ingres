@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Configuración de Neo OS</string>
+    <string name="anonymous_statistics_title">Estadístiques de Neo OS</string>
+    <string name="trust_feature_security_patches_explain">Google, n\'andecha colos fabricantes de SoC, espubliza mensualmente parches de seguranza pa iguar fallos que podríen esplotar aplicaciones malicioses pa saltar les llendes de seguranza y causar un dañu permanente nel preséu. Los parches forníos por Google aplíquense cada mes en tolos preseos compatibles, mas los parches pa códigu privativu namás pue aplicalos el fabricante del preséu. Pa caltener el preséu seguru, asegúrate de que la versión de Neo OS ta anovada siempre, y (si ye posible) asegúrate tamién de que la imaxe del fabricante ta anovada a la última versión qu\'aconseya Neo OS.</string>
+</resources>

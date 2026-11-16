@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS Indstillinger</string>
+    <string name="anonymous_statistics_title">Neo OS-statistikker</string>
+    <string name="anonymous_statistics_summary">Hjælp med at gøre Neo OS bedre, ved at deltage i anonym statistik-rapportering</string>
+    <string name="anonymous_statistics_warning">Deltagelse i Neo OS Statistikker vil tillade ikke-personlige data, at blive indsendt til
+        udviklerne af Neo OS, for at spore unikke installeringer, på tværs af enheder. Den indsendte information inkluderer en unik 
+        som ikke kompromitterer dit privatliv, eller personlige data. Dataene indsendes under hver opstart.\n\nTryk på Forhåndsvis Data, for et eksempel på de data, der indsendes.</string>
+    <string name="trust_feature_security_patches_explain">Sikkerhedsrettelser frigives månedligt af Google i samarbejde med SoC-leverandører, for at adressere fejl, som kunne blive udnyttet af ondsindede apps, til at omgå sikkerhedsrestriktioner, og forårsage permanent skade på din enhed. Rettelser gjort tilgængelige af Google anvendes hver måned, på alle understøttede enheder, men rettelser til proprietær kode kun kan anvendes af din enheds producent. Sørg for at dit Neo OS-build altid er ajour, for at holde din enhed sikker, og (hvis gældende) sikre at dit producent-billede er opdateret til den seneste, som anbefales af Neo OS.</string>
+</resources>

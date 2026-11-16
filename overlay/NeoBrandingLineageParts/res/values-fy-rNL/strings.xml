@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS-ynstellingen</string>
+    <string name="anonymous_statistics_title">Neo OS-statistiken</string>
+    <string name="anonymous_statistics_summary">Help Neo OS te ferbetterjen troch anonime statistiken te ferstjoeren</string>
+    <string name="anonymous_statistics_warning">Troch statistiken ferstjoere ta te stean wurde wylst it opstarten anonime gegevens nei de ûntwikkelers fan Neo OS ferstjoerd om unike ynstallaasjes folgje te kinnen. Yn de gegevens sit in unyk id-nûmer ferwurke, dat jo privacy net skeint.\n\nOm in foarbyld te sjen, tikke jo op ‘Foarbyld fan gegevens’.</string>
+    <string name="trust_feature_security_patches_explain">Befeiligingspatches wurde elke moanne troch Google frijjûn yn gearwurking mei SoC-leveransiers om flaters oan te pakken dy\'t misbrûkt wurde kinne troch kweawollende apps om befeiligingsbeheiningen te omsilen en permaninte skea oan jo apparaat te feroarsaakjen. Patches dy\'t troch Google beskikber steld wurde, wurde elke moanne op alle stipe apparaten tapast, mar patches foar bedriuwseigen koade kinne allinnich troch de fabrikant fan jo apparaat tapast wurde. Om jo apparaat feilich te hâlden, moatte jo derfoar soargje dat jo Neo OS-build altyd by-de-tiid is en (wannear fan tapassing) soargje dat jo leveransiers-image fernijd wurdt nei de lêste dy\'t troch Neo OS oanrekommandearre wurdt.</string>
+</resources>

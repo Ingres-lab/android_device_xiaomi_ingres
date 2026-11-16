@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Vítejte v\u00a0<xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">Pokud máte zálohu Seedvault z <xliff:g id="name" example="Neo OS">%s</xliff:g> nebo jiného OS, můžete ji zde obnovit.</string>
+    <string name="setup_services">Neo OS funkce</string>
+    <string name="services_pp_explanation">Tyto služby rozšiřují funkce vašeho zařízení. Data budou použita v souladu se zásadami ochrany osobních údajů <xliff:g id="name" example="Neo OS">%1$s</xliff:g>.</string>
+    <string name="services_help_improve_cm">Pomozte vylepšit <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Pomozte vylepšit Neo OS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových funkcí pro <xliff:g id="name" example="Neo OS">%2$s</xliff:g>.</string>
+</resources>

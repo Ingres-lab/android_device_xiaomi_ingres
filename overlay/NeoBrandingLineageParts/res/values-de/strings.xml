@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS-Einstellungen</string>
+    <string name="anonymous_statistics_title">Neo OS-Statistiken</string>
+    <string name="anonymous_statistics_summary">Helfen Sie uns, Neo OS zu verbessern, indem Sie dem Sammeln anonymer Gerätestatistiken zustimmen.</string>
+    <string name="anonymous_statistics_warning">Die Aktivierung der Neo OS-Statistiken ermöglicht die Übertragung von nicht-personenbezogenen Daten an die Entwickler von Neo OS. Die bei jedem Neustart des Geräts übermittelten Daten beeinträchtigen nicht die Privatsphäre, da sie keinerlei Rückschlüsse auf den Benutzer zulassen.\n\nFür ein Beispiel der gesendeten Daten bitte auf \"Vorschau\" klicken.</string>
+    <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Anbietern veröffentlicht. Diese beheben Fehler, mittels derer bösartige Anwendungen Sicherheitseinschränkungen umgehen und dein Gerät dauerhaft beschädigen können. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches für proprietären Code können nur vom Hersteller deines Gerätes bereitgestellt werden. Um dein Gerät sicher zu halten, aktualisiere Neo OS und (wenn möglich) dein Vendor-Image stets auf das von Neo OS empfohlene.</string>
+</resources>

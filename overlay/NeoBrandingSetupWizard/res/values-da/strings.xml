@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Velkommen til <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="setup_services">Neo OS-funktioner</string>
+    <string name="services_pp_explanation">&lt;xliff:g id=\"name\" example=\"Neo OS\"&gt;Disse tjenester virker for at udvide funktionerne på din enhed. Data vil blive brugt i overensstemmelse med  &lt;xliff:g id=\"name\" example=\"Neo OS\"&gt;%1$s&lt;/xliff:g&gt;\'s privatlivspolitik.</string>
+    <string name="services_help_improve_cm">Hjælp med at forbedre <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> ved automatisk at sende diagnose og forbrugsdata til <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Denne information kan ikke bruge til at identificere dig men giver en hjælpende hånd til de hold der arbejder med batteri levetid, app præstation og nye<xliff:g id="name" example="Neo OS">%3$s</xliff:g> funktioner.</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">ڕێکخستنەکانی Neo OS</string>
+    <string name="anonymous_statistics_title">ئامارەکانی Neo OS</string>
+    <string name="anonymous_statistics_summary">یارمەتیدانی Neo OS بە ناردنی ئاماری نەناسراو</string>
+    <string name="trust_feature_security_patches_explain">پارچەکانی پاراستن مانگانە لەلایەن Googleـەوە بە هاوکاری کۆمپانیاکانی دروستکەری پارچە (SoC) بڵاودەکرێنەوە بۆ پڕکردنەوەی ئەو کەلێنانەی کە لەوانەیە لەلایەن بەرنامە زیانبەخشەکانەوە بەکاربهێنرێن بۆ تێپەڕاندنی قەدەغەکردنەکانی پاراستن. ئەو پارچانەی Google بڵاویان دەکاتەوە مانگانە لەسەر هەموو ئامێرە پاڵپشتیکراوەکان جێبەجێ دەکرێن، بەڵام پارچەکانی تایبەت بە کۆدی دروستکەر تەنها لەلایەن کۆمپانیای دروستکەری ئامێرەکەوە دەتوانرێت جێبەجێ بکرێن. بۆ هێشتنەوەی ئامێرەکەت بە پارێزراوی، دڵنیابە کە وەشانی Neo OSـەکەت هەمیشە نوێیە.</string>
+</resources>

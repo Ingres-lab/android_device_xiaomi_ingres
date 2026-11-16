@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageos_system_label">Sistema Neo OS</string>
+    <string name="permdesc_writeSecureSettings">Consente all\'applicazione di modificare le impostazioni sicure di sistema di Neo OS. Non utilizzato dalle app normali.</string>
+    <string name="lineage_api_level">Livello API Neo OS</string>
+    <string name="lineage_updates">Aggiornamenti Neo OS</string>
+    <string name="lineage_version">Versione Neo OS</string>
+</resources>

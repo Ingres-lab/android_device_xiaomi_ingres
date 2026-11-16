@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Croeso i <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="setup_services">Nodweddion Neo OS</string>
+    <string name="services_pp_explanation">Mae\'r gwasanaethau hyn yn gweithio i ti fedru ymestyn gallu dy ddyfais. Caiff data ei ddefnyddio yn ôl polisi preifatrwydd <xliff:g id="name" example="Neo OS">%1$s</xliff:g>.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> wrth anfon gwybodaeth ddiagnostig a defnydd data at <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Ni fydd yn bosib defnyddio\'r wybodaeth i dy adnabod di ac mi fydd o help mawr i\'r timau sy\'n gweithio ar bethau fel gwella perfformiad apiau a bywyd batri a chreu nodweddion newydd yn <xliff:g id="name" example="Neo OS">%3$s</xliff:g>.</string>
+</resources>

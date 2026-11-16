@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">მოგესალმებათ <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">თუ გაქვთ Seedvault-მარქაფით შენახული <xliff:g id="name" example="Neo OS">%s</xliff:g> ან ნებისმიერი სხვა საოპერაციო სისტემა, აქედან შეძლებთ აღადგინოთ.</string>
+    <string name="setup_services">Neo OS-ს შესაძლებლობები</string>
+    <string name="services_pp_explanation">ამ მომსახურებების მუშაობა აფართოებს თქვენი მოწყობილობების შესაძლებლობებს. მონაცემებით სარგებლობის პირობებს განსაზღვრავს <xliff:g id="name" example="Neo OS">%1$s</xliff:g> მისი პირადულობის დებულებით.</string>
+    <string name="services_help_improve_cm">დაგვეხმარეთ, გავაუმჯობესოთ <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> იმ საკვლევი და გამოყენების მონაცემთა ავტომატური გაგზავნით, რომელთაც გაეცნობა <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. ეს მონაცემები არ გამოდგება თქვენი ვინაობის დასადგენად, სამაგიეროდ ხელს გაუმართავს შემმუშავებლებს, რომ დახვეწონ ბატარეის მოხმარება, გაზარდონ აპების წარმადობა და გააუმჯობესონ <xliff:g id="name" example="Neo OS">%3$s</xliff:g> ახალი შესაძლებლობებით.</string>
+</resources>

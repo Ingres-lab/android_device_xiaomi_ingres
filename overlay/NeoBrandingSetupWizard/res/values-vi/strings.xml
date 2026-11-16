@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Chào mừng bạn đến <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">Nếu bạn có bản sao lưu Seedvault từ <xliff:g id="name" example="Neo OS">%s</xliff:g> hoặc bất kỳ hệ điều hành nào khác, bạn có thể khôi phục nó tại đây.</string>
+    <string name="setup_services">Các tính năng Neo OS</string>
+    <string name="services_pp_explanation">Các dịch vụ này giúp bạn mở rộng khả năng của thiết bị. Dữ liệu sẽ được sử dụng theo chính sách bảo mật của <xliff:g id="name" example="Neo OS">%1$s</xliff:g>.</string>
+    <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu sử dụng và chẩn đoán đến <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Thông tin này không thể được sử dụng để nhận dạng bạn và hỗ trợ các nhóm làm việc về những yếu tố như thời lượng pin, hiệu suất ứng dụng và <xliff:g id="name" example="Neo OS">%3$s</xliff:g> tính năng mới.</string>
+</resources>

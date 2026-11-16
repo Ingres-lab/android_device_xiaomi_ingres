@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="anonymous_statistics_title">Neo OS statistieke</string>
+    <string name="anonymous_statistics_summary">Help om Neo OS beter maak deur anonieme statistieke verslaggewing aan te skakel</string>
+    <string name="anonymous_statistics_warning">Deur Neo OS statistieke toe te laat sal nie-persoonlike data ingestuur word na die ontwikkelaars van Neo OS. Die inligting sluit in \'n unieke identifikasie nommer wat nie jou privaatheid of persoonlike data in gevaar stel nie. Die data word ingestuur tydens elke \'boot\'.\n\nVir \'n voorbeeld van die data wat ingestuur word, tik op Voorskou Data.</string>
+</resources>

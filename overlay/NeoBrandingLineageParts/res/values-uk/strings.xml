@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="anonymous_statistics_title">Статистика Neo OS</string>
+    <string name="anonymous_statistics_summary">Допоможіть зробити Neo OS кращим, відправляючи анонімну статистику</string>
+    <string name="anonymous_statistics_warning">Анонімні звіти дозволяють розробникам Neo OS відстежувати роботу ОС на різних пристроях. Інформація, що відправляється включає назву пристрою, версію прошивки і унікальний ідентифікатор, що ніяким чином не впливає на Вашу конфіденційність. Дані відправляються при кожному завантаженні пристрою.\n\nЩоб переглянути приклад, натисніть \"Попередній перегляд даних\".</string>
+</resources>

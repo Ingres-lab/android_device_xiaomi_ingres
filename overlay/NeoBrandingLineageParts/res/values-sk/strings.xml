@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Nastavenia Neo OS</string>
+    <string name="anonymous_statistics_title">Štatistiky Neo OS</string>
+    <string name="anonymous_statistics_summary">Pomôžte zlepšiť Neo OS povolením anonymných štatistických hlásení</string>
+    <string name="anonymous_statistics_warning">Povolením štatistík Neo OS súhlasíte s odosielaním neosobných údajov vývojárom Neo OSu, za účelom evidencie jedinečných inštalácií naprieč všetkými zariadeniami. Informácie obsahujú unikátny identifikátor, ktorý neohrozuje vaše súkromné alebo osobné údaje. Údaje sú odoslané pri každom spustení.\n\nNa ukážku odosielaných údajov kliknite na Prehľad údajov.</string>
+    <string name="trust_feature_security_patches_explain">Bezpečnostné záplaty sú vydávané mesačne spoločnosťou Google a dodávateľmi SoC na riešenie nedostatkov v systéme, ktoré by mohli byť zneužiť škodlivými aplikáciami na obídenie bezpečnostných obmedzení a mohli by spôsobiť dočasné alebo trvalé poškodenie vášho zariadenia.\nZatiaľ čo záplaty platformy sú aktualizované globálne každý mesiac, záplaty OEM dodávateľov sú aktualizované z času na čas.\nAk chcete, aby vaše zariadenie bolo v bezpečí, uistite sa, že vaša zostava Neo OS je vždy aktuálna.</string>
+</resources>

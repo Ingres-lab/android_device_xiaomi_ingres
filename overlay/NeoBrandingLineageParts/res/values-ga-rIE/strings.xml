@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS Socruithe</string>
+    <string name="anonymous_statistics_title">Staitisticí Neo OS</string>
+    <string name="anonymous_statistics_summary">Cabhraigh le Neo OS a dhéanamh níos fearr trí leas a bhaint as tuairisciú staitisticí gan ainm</string>
+    <string name="anonymous_statistics_warning">Ceadófar sonraí neamhphearsanta a chur isteach chuig an bPríomh-Staidreamh i Neo OS
+        forbróirí Neo OS chun suiteálacha uathúla a rianú thar fheistí. Áirítear san fhaisnéis a cuireadh isteach aitheantóir uathúil,
+        nach ndéanann dochar do phríobháideachas nó do shonraí pearsanta. Cuirtear na sonraí isteach le linn gach tosaithe.\n\nChun sampla de na sonraí a chuirtear isteach, tapáil ar Sonraí Réamhamhairc.</string>
+    <string name="trust_feature_security_patches_explain">Eisíonn Google paistí slándála go míosúil i gcomhar le díoltóirí SoC chun aghaidh a thabhairt ar lochtanna a d’fhéadfadh aipeanna mailíseacha leas a bhaint astu chun srianta slándála a sheachbhóthar agus chun damáiste buan a dhéanamh do do ghléas. Cuirtear paistí a chuireann Google ar fáil gach mí ar gach gléas a dtacaítear leo, ach ní féidir ach le monaróir do ghléis paistí go dtí an cód dílseánaigh a chur i bhfeidhm. Chun do ghléas a choinneáil sábháilte déan cinnte go bhfuil do leagan Neo OS cothrom le dáta i gcónaí, agus (más infheidhme) cinntigh go ndéantar d’íomhá díoltóir a nuashonrú chuig an gceann is déanaí a mhol Neo OS.</string>
+</resources>

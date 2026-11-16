@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Fáilte go <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">Má tá cúltaca Seedvault agat ó <xliff:g id="name" example="Neo OS">%s</xliff:g> nó ó aon OS eile, is féidir leat é a aischur anseo.</string>
+    <string name="setup_services">Neo OS gnéithe</string>
+    <string name="services_pp_explanation">Oibríonn na seirbhísí seo duit chun cumais do ghléis a leathnú. Úsáidfear sonraí de réir pholasaí príobháideachais <xliff:g id="name" example="Neo OS">%1$s</xliff:g>.</string>
+    <string name="services_help_improve_cm">Cabhraigh le feabhas a chur ar <xliff:g id="name" example="Neo OS"> %s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Cabhraigh le Neo OS a fheabhsú">%1$s</xliff:g> trí shonraí diagnóiseacha agus úsáide a sheoladh go huathoibríoch chuig <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Ní féidir an fhaisnéis seo a úsáid chun tú a aithint agus tugann sé cúnamh d\'fhoirne atá ag obair ar rudaí cosúil le saol ceallraí, feidhmíocht aipe agus <xliff:g id="name" example="Neo OS">%3$s</xliff:g> gnéithe.</string>
+</resources>

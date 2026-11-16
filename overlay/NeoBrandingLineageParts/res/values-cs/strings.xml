@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Nastavení Neo OS</string>
+    <string name="anonymous_statistics_title">Neo OS statistika</string>
+    <string name="anonymous_statistics_summary">Pomozte nám zdokonalit Neo OS zasíláním anonymní statistiky</string>
+    <string name="anonymous_statistics_warning">Povolením zasílání statistik systému Neo OS umožní odesílat neosobní data vývojářům k zjišťování stavu instalace na různých zařízeních. Odesílaná data obsahují unikátní identifikátor zařízení, který nezpůsobí žádnou kompromitaci soukromí nebo osobních dat. Data jsou odesílána při každém restartu zařízení.\n\nDotykem na „Náhled dat“ se můžete podívat na příklad odesílaných dat.</string>
+    <string name="trust_feature_security_patches_explain">Bezpečnostní záplaty jsou vydávány měsíčně společností Google ve spolupráci s dodavateli čipů, aby odstranili nedostatky, kterých by mohly zneužít škodlivé aplikace tím, že obejdou bezpečnostní omezení a způsobí trvalé poškození vašemu zařízení. Záplaty, které společnost Google poskytuje, jsou aplikovány každý měsíc na všech podporovaných zařízeních, ale záplaty mohou být do kódu aplikovány pouze výrobcem zařízení. Chcete-li zařízení udržet v bezpečí, ujistěte se, že je vaše sestavení Neo OS vždy aktuální, a (pokud možno) ujistěte se, že je obraz systému dodavatele aktualizován na poslední verzi doporučenou Neo OS.</string>
+</resources>

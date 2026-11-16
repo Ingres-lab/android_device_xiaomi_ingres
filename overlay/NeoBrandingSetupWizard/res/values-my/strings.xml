@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message"><xliff:g id="name" example="Neo OS">%1$s</xliff:g> မှ ကြိုဆိုပါတယ်</string>
+    <string name="setup_services">Neo OS လုပ်ဆောင်နိုင်မှုများ</string>
+    <string name="services_pp_explanation">ဤလုပ်ဆောင်ချက်သည် သင့်စက်ပစ္စည်း၏ စွမ်းဆောင်နိုင်မှုကို တိုးမြင့်စေနိုင်ပါသည်။ အချက်အလက်များကို <xliff:g id="name" example="Neo OS">%1$s</xliff:g>၏ ပုဂ္ဂိုလ်ရေးဆိုင်ရာမူဝါဒအတိုင်း အသုံးပြုပါမည်။</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="Neo OS">%s</xliff:g> ကိုတိုးတက်လာအောင် ကူညီပါ။</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> သည် ပြဿနာများနှင့် အသုံးပြုမှုဆိုင်ရာအချက်အလက်များကို <xliff:g id="name" example="Neo OS">%2$s</xliff:g> သို့ပေးပို့ပါမည်။ အချက်အလက်များသည် သင်မည်သူမည်ဝါဖြစ်သည်ကို မခွဲခြားနိုင်ဘဲ ဘက်ထရီသက်တမ်း, အက်ပ်များ၏ စွမ်းဆောင်ရည်များနှင့် <xliff:g id="name" example="Neo OS">%3$s</xliff:g>၏ လုပ်ဆောင်မှုအသစ်များကဲ့သို့သော အချက်အလက်များကို အလုပ်လုပ်နေသောအဖွဲ့ထံသို့သာ လွှဲပြောင်းပါမည်။</string>
+</resources>

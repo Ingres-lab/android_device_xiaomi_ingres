@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Cunfiguratziones de Neo OS</string>
+    <string name="anonymous_statistics_title">Istatìsticas de Neo OS</string>
+    <string name="anonymous_statistics_summary">Agiuda a megiorare Neo OS permitende s\'imbiu de istatìsticas anònimas</string>
+    <string name="anonymous_statistics_warning">Ativende is Istatìsticas Neo OS as a permìtere s\'imbiu de datos non personales a s\'iscuadra de isvilupu
+        pro contare su nùmeru de installatziones ùnicas in is dispositivos. S\'informatzione imbiada includet un\'identificadore ùnicu
+        chi non cumpromitet in nissuna manera sa riservadesa tua o is datos personales. Is datos s\'imbiant a cada aviu\n\nPro bìdere un\'esempru de datos imbiados, incarca Previsualizatzione datos.</string>
+    <string name="trust_feature_security_patches_explain">Is patch de seguresa essint onni mese dae sa Google in cooperatzione cun is produtores de SoC pro nch\'isòrvere problemas chi diant pòdere isfrutare is aplicatziones dannàrgias pro inghiriare is restritziones de seguresa e causare dannos permanentes a su dispositivu. Is patch dispostos dae sa Google sunt aplicados a totu is dispositivos cumpatìbiles, ma cussos chi pertocant a su còdighe propietàriu ddas podet aplicare isceti su produtore de su dispositivu tuo. Pro mantènnere su dispositivu in seguresa controlla chi sa versione tua de Neo OS siat semper atualizada e s\'in casu assegura·ti chi s\'immàgine de su produtore tuo siat atualizada a s\'ùrtima versione cussigiada dae Neo OS.</string>
+</resources>

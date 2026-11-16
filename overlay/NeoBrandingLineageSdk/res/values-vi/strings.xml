@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageos_system_label">Hệ thống Neo OS</string>
+    <string name="lineage_api_level">Cấp độ API Neo OS</string>
+    <string name="lineage_updates">Cập nhật Neo OS</string>
+    <string name="lineage_version">Phiên bản Neo OS</string>
+</resources>

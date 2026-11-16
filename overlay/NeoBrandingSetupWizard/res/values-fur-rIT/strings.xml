@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Benvignûts su <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">Se tu âs un backup Seedvault di <xliff:g id="name" example="Neo OS">%s</xliff:g> o di un altri SO, tu puedis ripristinâlu achì.</string>
+    <string name="setup_services">Funzionalitâts di Neo OS</string>
+    <string name="services_pp_explanation">Chescj servizis a funzionin par slargjâ lis funzionalitâts dal to dispositîf. I dâts a vignaran doprâts in conformitât cu la informative su la riservatece di <xliff:g id="name" example="Neo OS">%1$s</xliff:g>.</string>
+    <string name="services_help_improve_cm">Jude a miorâ <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> inviant in automatic i dâts diagnostiche di consum ai svilupadôrs di <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Nol sarà pussibil doprâ chestis informazions par identificâti ma a dan une man ai grups che a lavorin su robis come la durade de batarie, lis prestazions des aplicazions e lis gnovis funzionalitâts di <xliff:g id="name" example="Neo OS">%3$s</xliff:g>.</string>
+</resources>

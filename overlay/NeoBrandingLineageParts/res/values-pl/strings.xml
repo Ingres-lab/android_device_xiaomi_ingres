@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Ustawienia Neo OS</string>
+    <string name="anonymous_statistics_title">Statystyki Neo OS</string>
+    <string name="anonymous_statistics_summary">Pomóż ulepszyć Neo OS, pozwalając na wysyłanie anonimowych statystyk</string>
+    <string name="anonymous_statistics_warning">Wyrażenie zgody na udział w statystykach Neo OS zezwoli na przesyłanie anonimowych danych do
+        programistów Neo OS, aby śledzić ilość unikalnych instalacji na urządzeniach . Informacje zawierają unikalny identyfikator,
+       który nie narusza twojej prywatności lub prywatnych danych. Dane są wysyłane przy każdym uruchomieniu.\n\nAby zobaczyć przykład przesyłanych danych naciśnij \"podgląd danych\".</string>
+    <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji Neo OS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez Neo OS.</string>
+</resources>

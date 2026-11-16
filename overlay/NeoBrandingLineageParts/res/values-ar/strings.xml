@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">إعدادات Neo OS</string>
+    <string name="anonymous_statistics_title">إحصائيات نظام Neo OS</string>
+    <string name="anonymous_statistics_summary">ساهم في جعل Neo OS أفضل بإرسال تقارير الإحصائيات</string>
+    <string name="anonymous_statistics_warning">بالموافقة على المشاركة في إحصائيات Neo OS سيسمح بإرسال البيانات غير الشخصية إلى مطوري Neo OS لتعقب الإصدارات المثبتة على مختلف الأجهزة كلٍ على حدة. وتشمل المعلومات المقدمة معرفًا فريدًا من نوعه، وبالتالي لا تتعرض خصوصيتك أو بياناتك الشخصية للخطر. تُرسل البيانات عند التشغيل في كل مرة.\n\n للإطلاع على مثال للبيانات التي يتم إرسالها، اضغط على معاينة البيانات.</string>
+    <string name="trust_feature_security_patches_explain">تصدر تصحيحات الأمان شهريًا من Google بالتعاون مع موردي SoC لمعالجة العيوب التي يمكن استغلالها من قبل تطبيقات خبيثة لتجاوز القيود الأمنية ويتسبب في ذلك في ضرر دائم لجهازك. التحديثات التي أتاحتها Google تطبق كل شهر على جميع الأجهزة المدعومة، ولكن يمكن تطبيق تصحيحات رمز الملكية فقط من الشركة المصنعة لجهازك. للحفاظ على جعل جهازك آمن برجاء التأكد بأن اصدار Neo OS الخاص بك محدث باستمرار، وضمان تحديث (إذا كان ممكنًا) صورة موردك إلى آخر اصدار موصى به من Neo OS.</string>
+</resources>

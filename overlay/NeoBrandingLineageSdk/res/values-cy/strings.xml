@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageos_system_label">System Neo OS</string>
+    <string name="permdesc_writeSettings">Mae\'n caniatáu i ap addasu gosodiadau system Neo OS.</string>
+    <string name="permdesc_writeSecureSettings">Mae\'n caniatáu i ap addasu gosodiadau system ddiogel Neo OS. Dim i\'w ddefnyddio gan apiau arferol.</string>
+    <string name="lineage_api_level">Lefel API Neo OS</string>
+    <string name="lineage_updates">Diweddariadau Neo OS</string>
+    <string name="lineage_version">Fersiwn Neo OS</string>
+</resources>

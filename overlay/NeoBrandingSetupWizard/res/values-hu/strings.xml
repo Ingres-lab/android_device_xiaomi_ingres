@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Legyen üdvözölve a <xliff:g id="name" example="Neo OS">%1$s</xliff:g> rendszerben</string>
+    <string name="intro_restore_subtitle">Amennyiben van <xliff:g id="name" example="Neo OS">%s</xliff:g>-mentése a Seedvaulttal, itt helyreállíthatja azt.</string>
+    <string name="setup_services">Neo OS újítások</string>
+    <string name="services_pp_explanation">Ezek a szolgáltatások Önért dolgoznak, hogy kibővítsék telefonja képességeit. Az adatok felhasználása a <xliff:g id="name" example="Neo OS">%1$s</xliff:g> adatvédelmi szabályzata alapján történik.</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="Neo OS">%s</xliff:g>, segítsen a fejlesztésében</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> automatikus diagnosztikai és használati adatok küldésével segíthet a <xliff:g id="name" example="Neo OS">%2$s</xliff:g> fejlesztőinek. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="Neo OS">%3$s</xliff:g> funkciók fejlesztésében.</string>
+</resources>

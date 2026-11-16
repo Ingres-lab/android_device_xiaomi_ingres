@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="menu_view_downloads">بینین لە داگرتنەکانی <xliff:g id="brand_name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="list_build_version">Neo OS %1$s</string>
+    <string name="list_build_version_date">Neo OS %1$s - %2$s</string>
+    <string name="list_major_upgrade_recovery_install">نوێکارییە سەرەکییەکانی وەشانی <xliff:g id="brand_name" example="Neo OS">%1$s</xliff:g> دەبێت بە دەست دابمەزرێنرێن. سەردانی ڕێبەری ئامێرەکەت بکە بۆ بەردەوامبوون.</string>
+</resources>

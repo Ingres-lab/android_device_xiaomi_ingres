@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS-innstillingar</string>
+    <string name="anonymous_statistics_title">Neo OS-statistikk</string>
+    <string name="anonymous_statistics_summary">Hjelp til med å gjera Neo OS betre ved å senda inn anonym statistikk</string>
+    <string name="anonymous_statistics_warning">Ved å senda inn statistikk til Neo OS-utviklarane, gjev du dei løyve til å samla inn anonyme data for å telja installasjonar på ulike einingar. Informasjonen inneheld ein unik identifikator som ikkje går ut over personvernet eller personopplysningane dine. Data vert sende inn ved kvar oppstart.\n\nTrykk på «Førehandsvis data» for å sjå døme på kva som vert sendt.</string>
+    <string name="trust_feature_security_patches_explain">Sikkerheitsoppdateringar vert gjevne ut kvar månad av Google i samarbeid med brikkeleverandørar for å tetta hol som kan utnyttast av skadelege appar for å gå utanom sikkerheitsavgrensingar og gjera varig skade på eininga di. Oppdateringar frå Google vert lagde inn kvar månad på alle støtta einingar, men oppdateringar for produsenten sin eigen kode kan berre leggjast inn av produsenten sjølv. For å halda eininga di trygg må du fylgja med på at Neo OS-versjonen din alltid er oppdatert, og (dersom aktuelt) sjå til at leverandørbiletet ditt er oppdatert til det nyaste som Neo OS tilrår.</string>
+</resources>

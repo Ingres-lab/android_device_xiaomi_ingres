@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS Postavke</string>
+    <string name="anonymous_statistics_title">Neo OS statistika</string>
+    <string name="anonymous_statistics_summary">Pomozite nam poboljšati Neo OS slanjem anonimnih statističkih izvješća</string>
+    <string name="anonymous_statistics_warning">Omogućavanjem slanja Neo OS statistike dozvolit će se da se neosobni podaci dostave razvojnom timu Neo OS-a kako bi se pratio broj pojedinačnih instalacija na različite uređaje. Informacije koje se šalju sadrže jedinstvenu identifikaciju koja ne kompromitira privatnost ili osobne podatke. Podaci se šalju pri svakom pokretanju uređaja.\n\nZa primjer podataka koji se šalju, dodirnite pregled podataka.</string>
+</resources>

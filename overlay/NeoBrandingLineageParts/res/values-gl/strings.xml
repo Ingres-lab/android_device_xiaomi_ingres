@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Configuración de Neo OS</string>
+    <string name="anonymous_statistics_title">Neo OS estadisticas</string>
+    <string name="anonymous_statistics_summary">Axude a mellorar Neo OS enviando informes de estatísiticas anónimas</string>
+    <string name="anonymous_statistics_warning">Optar polo envío de estatísticas Neo OS permitirá que se transmitan datos non personais aos desenvolvedores de Neo OS para rastrear intalacións únicas através dos dispositivos. Os datos transmitidos teñen un identificador único, que non compromete a súa privacidade ou datos persoais. Os datos serán enviados cada vez que se inicie.\n\nPara ver un exemplo dos datos van ser enviados, toque en Previsualizar datos.</string>
+    <string name="trust_feature_security_patches_explain">Os parches de seguranza son liberados mensualmente por Google coa cooperación dos fabricantes de SoC para corrixir fallos que poden ser aproveitados por aplicacións maliciosas para saltar as restricións de seguranza e causar danos permanentes o teu dispositivo. Os parches dispoñíbeis dende Google aplícanse mensualmente en tódolos dispositivos compatíbeis, agás os de código propietario que serán aplicados polo fabricante do teu dispositivo. Para manter o teu dispositivo seguro verifica que a versión do Neo OS está actualizada, e (se aplica) asegúrate que a imaxe do teu fabricante está actualizada á máis recente recomendada polo equipo do Neo OS.</string>
+</resources>

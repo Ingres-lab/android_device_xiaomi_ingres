@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS\'i seaded</string>
+    <string name="anonymous_statistics_title">Neo OS\'i statistika</string>
+    <string name="anonymous_statistics_summary">Aita Neo OS\'i paremaks teha, lülitades sisse anonüümse statistika raporteerimise</string>
+    <string name="anonymous_statistics_warning">Lülitades sisse Neo OS\'i statistika, lubad sa isikustamata teabe saatmist
+        Neo OS\'i arendajatele, et nad saaksid jälgida seadmepõhiselt unikaalseid paigaldusi. Saadetud teabe hulgas on unikaalne identifikaator,
+        mis ei ohusta sinu privaatsust ega isiklikke andmeid. Teave saadetakse igal käivitusel.\n\nEt näha saadetavate andmete näidet, koputa valikul
+andmete eelvaade.</string>
+    <string name="trust_feature_security_patches_explain">Google väljastab iga kuu turvapaikasid koostöös SoC tarnijatega, parandamaks vigu, mida võivad pahatahtlikud rakendused ära kasutada, et pääseda mööda turvapiirangutest ning põhjustada püsivat kahju sinu seadmele. Paigad, mille Google väljastab rakendatakse iga kuu kõikidele toetatud seadmetele, aga omandiõigustega koodile saab paiku määrata ainult sinu seadme tootja. Et hoida oma seade turvalisena, veendu, et sinu Neo OS järk on alati kaasaegne ning (võimalusel) veendu, et sinu tarnija tõmmis on uuendatud Neo OS\'i poolt viimasena soovitatud versioonile.</string>
+</resources>

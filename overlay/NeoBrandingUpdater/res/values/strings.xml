@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="export_path">Neo OS updates/</string>
+    <string name="menu_view_downloads">View on <xliff:g id="brand_name" example="Neo OS">%1$s</xliff:g> Downloads</string>
+    <string name="brand_name">Neo OS</string>
+    <string name="header_build_version">Neo OS <xliff:g id="version" example="23.2">%1$s</xliff:g></string>
+    <string name="list_build_version">Neo OS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Neo OS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_major_upgrade_recovery_install">Major <xliff:g id="brand_name" example="Neo OS">%1$s</xliff:g> version upgrades must be installed manually. Refer to your device\'s guide to continue.</string>
+</resources>

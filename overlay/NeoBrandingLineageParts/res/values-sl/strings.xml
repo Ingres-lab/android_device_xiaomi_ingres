@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Nastavitve Neo OS</string>
+    <string name="anonymous_statistics_title">Statistika Neo OS</string>
+    <string name="anonymous_statistics_summary">Pomagajte izboljšati Neo OS tako, da izberete pošiljanje anonimne statistike</string>
+    <string name="anonymous_statistics_warning">Izbira statistike Neo OS bo dovolila pošiljanje neosebnih podatkov
+        razvijalcem Neo OS-a, da lahko sledijo edinstvenim namestitvam v napravah. Poslani podatki vključujejo edinstven določilnik,
+        ki ne ogroža vaše zasebnosti in osebnih podatkov. Podatki so poslani ob vsakem zagonu.\n\nZa primer poslanih podatkov tapnite Predogled podatkov.</string>
+    <string name="trust_feature_security_patches_explain">Varnostni popravki so izdani mesečno s strani Googla v sodelovanju s proizvajalci SoC-ov, da naslovijo pomanjkljivosti, ki jih lahko zlonamerne aplikacije izrabijo za obvoz varnostnih omejitev in lahko povzročijo trajne poškodbe vaše naprave. Popravki s strani Googla so na vseh podprtih napravah uveljavljeni vsak mesec, vendar so lahko popravki lastniške kode uveljavljeni samo s strani proizvajalca naprave. Da ohranite vašo napravo varno, poskrbite, da je vaša izgradnja Neo OS-a vedno posodobljena in (v kolikor je na voljo) odtis dobavitelja posodobobljen na zadnjo različico priporočeno s strani Neo OS-a.</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">Afáyate en <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">Si tienes una copia de seguranza de Seedvault de <xliff:g id="name" example="Neo OS">%s</xliff:g> o d\'otru SO, pues restaurala equí.</string>
+    <string name="update_recovery_setting">Anovar el recovery xunto con Neo OS</string>
+    <string name="setup_services">Funciones de Neo OS</string>
+    <string name="services_pp_explanation">Estos servicios funcionen p\'aumentar les funciones del preséu. Los datos van usase d\'acuerdu cola política de privacidá de <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> pente l\'unviu los datos de diagnósticu y d\'usu a <xliff:g id="name" example="Neo OS">%2$s</xliff:g>. Esta información nun se pue usar pa identificate mas val p\'agabitar a los desendolcadores pa que trabayen en coses como la duración de la batería, el rindimientu de les aplicaciones y les funciones nueves de <xliff:g id="name" example="Neo OS">%3$s</xliff:g>.</string>
+</resources>

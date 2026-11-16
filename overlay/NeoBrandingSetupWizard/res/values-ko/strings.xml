@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message"><xliff:g id="name" example="Neo OS">%1$s</xliff:g>에 오신 것을 환영합니다</string>
+    <string name="intro_restore_subtitle"><xliff:g id="name" example="Neo OS">%s</xliff:g> 또는 다른 OS의 Seedvault 백업이 있다면 지금 복원할 수 있습니다.</string>
+    <string name="setup_services">Neo OS 기능</string>
+    <string name="services_pp_explanation">이 서비스는 기기의 성능 향상을 위해 작동합니다. 수집한 데이터는 <xliff:g id="name" example="Neo OS">%1$s</xliff:g>의 개인 정보 보호 정책에 따라 사용됩니다.</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="Neo OS">%s</xliff:g> 의 개선을 돕기 위해</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Neo OS의 개선을 돕기 위해">%1$s</xliff:g> 진단 및 사용 정보를 <xliff:g id="name" example="Neo OS">%2$s</xliff:g>에 보냅니다. 이 정보로는 사용자를 식별할 수 없으며 <xliff:g id="name" example="Neo OS">%3$s</xliff:g>에 새로운 기능을 추가하거나 배터리 수명, 앱 성능을 개선하는 데 도움이 됩니다.</string>
+</resources>

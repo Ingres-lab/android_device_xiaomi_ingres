@@ -63,6 +63,14 @@ PRODUCT_PACKAGES += \
     ApertureResIngres \
     NfcResIngres
 
+# Neo OS branding: "LineageOS" -> "Neo OS" in the setup wizard, Updater, LineageParts and the
+# Lineage SDK strings (About phone), every locale
+PRODUCT_PACKAGES += \
+    NeoBrandingSetupWizard \
+    NeoBrandingUpdater \
+    NeoBrandingLineageParts \
+    NeoBrandingLineageSdk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sm8450/audio \

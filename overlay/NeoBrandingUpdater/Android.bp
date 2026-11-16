@@ -1,0 +1,10 @@
+//
+// SPDX-FileCopyrightText: Neo
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Neo OS branding: replaces "LineageOS" in org.lineageos.updater's strings (all locales)
+runtime_resource_overlay {
+    name: "NeoBrandingUpdater",
+    device_specific: true,
+}

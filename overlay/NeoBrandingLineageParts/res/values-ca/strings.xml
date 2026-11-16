@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Configuració de Neo OS</string>
+    <string name="anonymous_statistics_title">Estadístiques de Neo OS</string>
+    <string name="anonymous_statistics_summary">Ajuda a fer millor Neo OS optant a transmetre estadístiques anònimes</string>
+    <string name="anonymous_statistics_warning">Optant a les estadístiques de Neo OS permetràs que dades no-personals siguin transmeses als desenvolupadors de Neo OS per rastrejar les instal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o les dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
+    <string name="trust_feature_security_patches_explain">Els pegats de seguretat són publicats mensualment per Google en cooperació amb proveïdors de SoC per abordar falles que podrien ser explotades per aplicacions malicioses per eludir les restriccions de seguretat i causar danys permanents al dispositiu. Els pegats posats a disposició per Google s\'apliquen tots els mesos en tots els dispositius compatibles, però els pegats per al codi propietari només poden ser aplicats pel fabricant del dispositiu. Per mantenir el dispositiu segur, assegureu-vos que la compilació de Neo OS estigui sempre actualitzada i, si és possible, assegureu-vos que la imatge del proveïdor estigui actualitzada a la més recent recomanada per Neo OS.</string>
+</resources>

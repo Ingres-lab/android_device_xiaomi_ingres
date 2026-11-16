@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageos_system_label">Neo OS kerfi</string>
+    <string name="permdesc_useHardwareFramework">Gerir forriti kleift að fá aðgang að vélbúnaðarkerfum Neo OS.</string>
+    <string name="permlab_writeSettings">breyta kerfisstillingum Neo OS</string>
+    <string name="permdesc_writeSettings">Gerir forriti kleift að breyta kerfisstillingum Neo OS.</string>
+    <string name="permlab_writeSecureSettings">breyta öruggum kerfisstillingum Neo OS</string>
+    <string name="permdesc_writeSecureSettings">Gerir forriti kleift að breyta öryggisstillingum Neo OS. Notist ekki af venjulegum forritum.</string>
+    <string name="lineage_api_level">Neo OS API-stig</string>
+    <string name="lineage_updates">Neo OS uppfærslur</string>
+    <string name="lineage_version">Neo OS útgáfa</string>
+</resources>

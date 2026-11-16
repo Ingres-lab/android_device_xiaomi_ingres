@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS Ayarları</string>
+    <string name="anonymous_statistics_title">Neo OS istatistikleri</string>
+    <string name="anonymous_statistics_summary">Anonim istatistik raporlamayı tercih ederek Neo OS\'u daha iyi hale getirmeye yardımcı olun</string>
+    <string name="anonymous_statistics_warning">Neo OS İstatistiklerine dahil olmak, cihazlar arasındaki benzersiz yüklemeleri izlemek için
+        Neo OS geliştiricilerine kişisel olmayan verilerin gönderilmesine izin verecektir. Gönderilen bilgiler, gizliliğinizi veya
+        kişisel verilerinizi tehlikeye atmayan benzersiz bir tanımlayıcıyı içerir. Veriler her önyükleme sırasında gönderilir.\n\nGönderilen verilere bir örnek için Verileri Önizle üzerine dokunun.</string>
+    <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar sadece cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için Neo OS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın Neo OS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
+</resources>

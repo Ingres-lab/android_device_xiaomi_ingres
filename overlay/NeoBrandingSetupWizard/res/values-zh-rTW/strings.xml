@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_welcome_message">歡迎使用 <xliff:g id="name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="intro_restore_subtitle">如果您有來自 <xliff:g id="name" example="Neo OS">%s</xliff:g> 或任何其他作業系統的 Seedvault 備份，您可以在此處還原它。</string>
+    <string name="setup_services">Neo OS 功能</string>
+    <string name="services_pp_explanation">這些服務可協助您強化裝置的功能。資料將會根據 <xliff:g id="name" example="Neo OS">%1$s</xliff:g> 的隱私權政策使用。</string>
+    <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="Neo OS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve Neo OS">%1$s</xliff:g> 經由傳送錯誤報告及使用資料給 <xliff:g id="name" example="Neo OS">%2$s</xliff:g>，這些資料不會用於識別您的身分，而是用於幫助團隊改善電池壽命、應用程式效能與新的 <xliff:g id="name" example="Neo OS">%3$s</xliff:g> 功能。</string>
+</resources>

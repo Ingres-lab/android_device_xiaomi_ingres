@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="menu_view_downloads">Mostra-ho a les baixades del <xliff:g id="brand_name" example="Neo OS">%1$s</xliff:g></string>
+    <string name="list_build_version">Neo OS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Neo OS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_major_upgrade_recovery_install">Les actualitzacions importants de <xliff:g id="brand_name" example="Neo OS">%1$s</xliff:g> s\'han d\'instal·lar manualment. Consulteu la guia del dispositiu per continuar.</string>
+</resources>

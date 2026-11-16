@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageos_system_label">מערכת Neo OS</string>
+    <string name="permdesc_useHardwareFramework">אפשר ליישומים גישה לתשתית החומרה של Neo OS.</string>
+    <string name="permdesc_writeSettings">מאפשר ליישום לשנות את הגדרות מערכת Neo OS.</string>
+    <string name="lineage_api_level">רמת ה־API של Neo OS</string>
+    <string name="lineage_updates">עדכוני Neo OS</string>
+    <string name="lineage_version">גרסת Neo OS</string>
+</resources>

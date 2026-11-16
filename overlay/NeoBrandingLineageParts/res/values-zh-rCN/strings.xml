@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Neo OS 设置</string>
+    <string name="anonymous_statistics_title">Neo OS 统计</string>
+    <string name="anonymous_statistics_summary">开启匿名统计报告以便帮助 Neo OS 未来向更好的方向发展</string>
+    <string name="anonymous_statistics_warning">开启 Neo OS 统计将允许非个人数据被提交到 Neo OS 的开发者以便记录各种设备上的唯一安装。提交的信息包含一个唯一的标识符，而不会涉及您的隐私与个人数据。该数据将在每次启动时被提交。\n\n如您想看一个作为被提交数据的实例，请点击预览数据。</string>
+    <string name="trust_feature_security_patches_explain">安全补丁由 Google 和 SoC 厂商每月发布，用以修复可能会被恶意应用利用、绕过安全限制对你的设备造成暂时或永久损坏的缺陷。\n平台补丁每个月都会统一更新，但厂商补丁只能每次从 OEM 取得。\n要保证您的设备安全，请使用最新版本的 Neo OS。</string>
+</resources>

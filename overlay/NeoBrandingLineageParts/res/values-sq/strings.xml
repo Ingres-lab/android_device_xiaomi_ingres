@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">Cilësimet e Neo OS</string>
+    <string name="anonymous_statistics_title">Statistikat e Neo OS</string>
+    <string name="anonymous_statistics_summary">Ndihmo në përmirësimin e Neo OS duke lejuar raportimin anonim të statistikave</string>
+    <string name="anonymous_statistics_warning">Aktivizimi i Statistikave të Neo OS do të lejojë dërgimin e të dhënave jo-personale tek        zhvilluesit e Neo OS që të ndjekin instalime unike në pajisje të ndryshme. Informacioni i dërguar përmban një identifikues unik,        që nuk kompromenton privatësinë apo të dhënat e tua personale. Të dhënat dërgohen gjatë rindezjes së pajisjes.\n\nPër të parë një shëmbull të të dhënave që dërgohen, shtypni në Inspekto të Dhënat.</string>
+    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar gabimet nga të cilat mund të shfrytëzohen nga programet keqadashëse për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. korrigjimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por korrigjimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj Neo OS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga Neo OS.</string>
+</resources>
