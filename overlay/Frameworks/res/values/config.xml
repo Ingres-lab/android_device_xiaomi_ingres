@@ -427,6 +427,31 @@
     <string name="config_defaultContentSuggestionsService" translatable="false"
         >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
+    <!-- Neo: the rest of Android System Intelligence's Pixel roles. Content capture matters most:
+         SystemServer only starts ContentCaptureManagerService when this resource is set, and the
+         Google app and Pixel Weather deliver At a Glance data (weather, AGSA cards) to ASI through
+         ContentCaptureManager.shareData(). Without it the "content_capture" service does not
+         exist and At a Glance shows only the date. -->
+    <string name="config_defaultContentCaptureService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>
+    <string name="config_defaultAugmentedAutofillService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
+    <string name="config_defaultFieldClassificationService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AutofillFieldClassificationService</string>
+    <string name="config_defaultAmbientContextDetectionService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService</string>
+    <string name="config_defaultTranslationService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiTranslationService</string>
+    <string name="config_defaultWallpaperEffectsGenerationService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.app.wallpapereffects.AiAiWallpaperEffectsGenerationService</string>
+    <string name="config_defaultSystemCaptionsManagerService" translatable="false"
+        >com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
+    <string name="config_systemAmbientAudioIntelligence" translatable="false">com.google.android.as</string>
+    <string name="config_systemAudioIntelligence" translatable="false">com.google.android.as</string>
+    <string name="config_systemNotificationIntelligence" translatable="false">com.google.android.as</string>
+    <string name="config_systemTextIntelligence" translatable="false">com.google.android.as</string>
+    <string name="config_systemVisualIntelligence" translatable="false">com.google.android.as</string>
+
     <!-- Neo: Google Play services is the DeviceConfig configurator, as on Pixels (Lineage sets
          its own org.protonaosp.deviceconfig). The configurator role grants WRITE_DEVICE_CONFIG;
          without it GMS PlatformConfigurator fails every minute and Android System Intelligence
