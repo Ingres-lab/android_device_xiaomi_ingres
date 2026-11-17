@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Neo
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- The back main camera (id 0) drives the flash; the logical camera (id 4) is not needed.
+         Android System Intelligence follows camera 0's torch state for the At a Glance flashlight
+         card, so the flashlight tile must use camera 0 too. -->
+    <bool name="config_flashlightPreferLogicalCamera">false</bool>
+</resources>
